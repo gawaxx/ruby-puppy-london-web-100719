@@ -5,17 +5,18 @@ class Dog
   attr_accessor :dog 
   @@all = []
   
-  def initialize(dog)
-    @dog = dog
+  def initialize(name)
+    @name = name
     save 
   end 
+    
   
   def self.all 
     @@all 
   end 
   
   def self.print_all 
-    @@all.each {|dogs| puts dogs}
+    @@all.each {|their_names| puts their_names}
   end 
   
   def save
